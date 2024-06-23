@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/cfd5fcf59b.js" crossorigin="anonymous"></script>
+  <link href="./fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script defer src="./script.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+ 
+</head>
+<body>
+<main>
+  <div class="container">
+   <img 
+   src="./assets/images/illustration-sign-up-desktop.svg"
+   class="img-box" />
+   <div class="box-content">
+    <div class="content__text">
+    <h1 class="title">Stay updated!</h1>
+    <p class="subtitle">
+      Join 60,000+ product managers receiving monthly updates on:
+    </p>
+    </div>
+    <div class="bullets">
+      <p><i class="fa-solid fa-check"></i>Product discovery and building what matters</p>
+      <p><i class="fa-solid fa-check"></i>Measuring to ensure updates are a success</p>
+      <p><i class="fa-solid fa-check"></i>And much more!</p>
+    </div>
+    <form novalidate action="" method="GET" id="form" class="content__form">
+      <div class="email__form">
+        <label for="email">Email adress</label>
+        <span id="email__error"></span>
+        <input type="email" name="email" placeholder="email@company.com" id="email" required />
+      </div>
+      <div class="submit__form">
+        <input type="submit" id ="submit" value="Subscribe to monthly newsletter" />
+      </div>
+    </form>
+   </div>
+  </div>
+</main>
+
+<!-- Popup de partage -->
+<div class="popupBackground">
+  <div class="popup">
+    <div class="popup__content">
+      <i class="fas fa-check"></i>
+      <h1 class="popup__title">Thanks for subscribing!</h1>
+      <p class="popup__message">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+      <button class="popup__button">Dismiss message</button>
+  </div>
+</div>
+  
+ 
+</body>
+</html>
